@@ -1,0 +1,147 @@
+.main-container{
+    max-width: 700px;
+    min-height: 60vh;
+    background-color: #fff;
+    padding: 32px;
+    margin: 20px auto;
+    border-radius: 10px;
+    input{    
+        border: 0;
+        &:focus{
+            outline: none;
+        }
+    }
+
+    .error-message{
+        font-size: 12px;
+        font-weight: bold;
+        color: red;
+    }
+
+    .title-container{
+        border-bottom:2px solid #ddd;
+        transition: border-bottom 500ms;
+        &:focus-within{
+            border-bottom: 2px solid blue;
+        }
+        input{
+            width: 100%;
+            font-size: 2em;
+        }
+    }
+    .question-container{
+        padding: 20px;
+        margin-top: 40px;
+        border: 2px solid skyblue;
+        border-radius: 10px;
+        transition: border 500ms;
+        &:hover {
+            border: 2px solid blue;
+        }
+        
+        .question-header{
+            display: flex;
+            justify-content: space-between;
+
+            .question-title{
+                width: 70%;
+                border-bottom: 2px solid #ddd;
+                margin-bottom: 20px;
+                transition: border-bottom 500ms;
+                &:focus-within{
+                    border-bottom: 2px solid blue;
+                }
+                input{
+                    position: relative;
+                    width: 100%;
+                    font-weight: 600;
+                    font-size: 1.4em;
+                }
+            }
+        }
+        
+        .obj-choice-container{
+            margin-top: 30px;
+            .obj-choice{
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+                
+                .obj-choice-input{
+                    width: 80%;
+                    margin: 0 10px;
+                    border-bottom: 2px solid yellow;
+                    &:focus-within{
+                        border-bottom: 2px solid blue;
+                    }
+                    input{
+                        width: 100%;       
+                    }
+                }
+
+
+            }
+
+        }
+
+        .question-footer{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+
+            .add-choice-button{
+                display: flex;
+                width: 14%;
+                align-items: center;
+                font-size: 14px;
+                font-weight: 600;
+                color: blue;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+
+            .delete-question-button{
+                display: flex;
+                width: 14%;
+                align-items: center;
+                font-size: 14px;
+                font-weight: 600;
+                color: red;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+
+        
+        
+    }
+
+    .main-footer{
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .add-question-button{
+            display: flex;
+            width: 16%;
+            align-items: center;
+            font-size: 20px;
+            font-weight: 600;
+            color: blue;
+            &:hover{
+                cursor: pointer;
+            }
+        }   
+        .complete-survey-button{
+
+        }
+
+    }
+
+}
+
+
+
