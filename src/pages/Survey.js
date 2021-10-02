@@ -154,7 +154,7 @@ const Survey = () => (
                           </div>
               
                           <div className="select-type">
-                            <InputLabel style={{ fontSize: "12px" }}>문제 유형</InputLabel>
+                            <InputLabel className="input-label">문제 유형</InputLabel>
                             <NativeSelect style={{ margin: "0" }}
                               onChange={(e) => {
                                 const type = e.target.value;
@@ -227,7 +227,7 @@ const Survey = () => (
                         </div>
 
                         <div className="select-type">
-                          <InputLabel style={{ fontSize: "12px" }}>문제 유형</InputLabel>
+                          <InputLabel className="input-label" >문제 유형</InputLabel>
                           <NativeSelect style={{ margin: "0" }}
                             onChange={(e) => {
                               const type = e.target.value;
